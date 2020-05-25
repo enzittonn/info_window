@@ -83,7 +83,6 @@ class _MyMapState extends State<MyMap> {
 
   
   void _getCurrentLocation() async {
-    res = current location
     Position res = await Geolocator().getCurrentPosition();
     setState(() {
 
@@ -222,11 +221,11 @@ class _MyMapState extends State<MyMap> {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    /*children: <Widget>[
+                    children: <Widget>[
                       _buildAvatar(),
                       _buildLocationInfo(),
                       _buildMarkerType()
-                    ],*/
+                    ],
                   ),
                 ),
               ),
